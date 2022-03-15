@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".startUp.FirebasePhoneAuthActivity"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@color/colorBackgroundDark">
+
+    <LinearLayout
+        android:id="@+id/phoneLl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorBackgroundDark">
+
+            <RelativeLayout
+                android:id="@+id/phoneLlBar"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Step 1/3"
+                    android:textColor="@color/colorTextDark"
+                    android:fontFamily="@font/roboto_medium"
+                    android:layout_centerInParent="true"
+                    android:textAppearance="@style/Toolbar.TitleText" />
+
+            </RelativeLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="25dp"
+                app:cardElevation="0dp"
+                android:layout_alignParentBottom="true">
+
+                <androidx.core.widget.NestedScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fillViewport="true"
+                    android:padding="20dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/phoneLlText"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/roboto_bold"
+                                    android:text="Mobile \nVerification"
+                                    android:textColor="@color/colorTextDark"
+                                    android:textSize="35dp"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                            <ImageView
+                                android:id="@+id/phoneLlImageView"
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                app:srcCompat="@drawable/activity_phone_register_picture"
+                                android:layout_alignParentRight="true"/>
+
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="70dp"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="40dp"
+                            android:gravity="center_vertical">
+
+                            <com.hbb20.CountryCodePicker
+                                android:id="@+id/phoneLlCountryCodePicker"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:minHeight="40dp"
+                                app:ccp_defaultNameCode="PL"
+                                app:ccp_contentColor="@color/colorTextDark"
+                                android:layout_marginTop="2dp"/>
+
+                            <com.rengwuxian.materialedittext.MaterialEditText
+                                android:id="@+id/phoneLlPhoneNumber"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:hint="Phone number"
+                                app:met_textColorHint="@color/colorLightHint"
+                                app:met_underlineColor="@color/colorLightHint"
+                                app:met_textColor="@color/colorTextDark"
+                                app:met_baseColor="@color/colorTextDark"
+                                app:met_primaryColor="@color/colorLightHint"
+                                android:inputType="number"
+                                android:digits="0123456789"
+                                android:maxLength="12"
+                                android:maxLines="1"
+                                android:elevation="1dp"
+                                app:met_floatingLabel="normal" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center_horizontal"
+                            android:layout_marginTop="4dp">
+
+                            <ImageView
+                                android:layout_width="11dp"
+                                android:layout_height="11dp"
+                                android:src="@drawable/activity_phone_register_icon_lock"
+                                android:layout_marginRight="5dp"
+                                android:layout_marginTop="3dp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Your number will not be shared by anyone"
+                                android:textSize="12dp"/>
+
+                        </LinearLayout>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="60dp">
+
+                            <Button
+                                android:id="@+id/phoneLlButtonContinue"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:text="continue"
+                                android:textSize="20dp"
+                                android:textColor="@color/colorWhite"
+                                android:background="@drawable/activity_phone_register_button"
+                                android:fontFamily="@font/roboto_medium"
+                                android:layout_marginBottom="5dp"
+                                android:elevation="0dp"
+                                android:padding="10dp"/>
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </androidx.core.widget.NestedScrollView>
+
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/codeLl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorBackgroundDark">
+
+            <RelativeLayout
+                android:id="@+id/codeLlBar"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Step 2/3"
+                    android:textColor="@color/colorTextDark"
+                    android:fontFamily="@font/roboto_medium"
+                    android:layout_centerInParent="true"
+                    android:textAppearance="@style/Toolbar.TitleText" />
+
+            </RelativeLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="25dp"
+                app:cardElevation="0dp"
+                android:layout_alignParentBottom="true">
+
+                <androidx.core.widget.NestedScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fillViewport="true"
+                    android:padding="15dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/otpText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_bold"
+                            android:text="OTP \nVerification"
+                            android:textColor="@color/colorTextDark"
+                            android:textSize="32dp"
+                            android:textStyle="bold"
+                            android:layout_gravity="left"/>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_gravity="left"
+                            android:layout_marginTop="10dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Enter 6-digits code that sent to "
+                                android:fontFamily="@font/roboto_medium"
+                                android:textColor="@color/colorTextLight"
+                                android:textSize="14dp"/>
+
+                            <TextView
+                                android:id="@+id/codeLlPhoneNumber"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=""
+                                android:fontFamily="@font/roboto_medium"
+                                android:textColor="@color/colorTextDark"
+                                android:textStyle="bold"
+                                android:textSize="14dp"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="70dp"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="20dp"
+                            android:gravity="center">
+
+                            <com.rengwuxian.materialedittext.MaterialEditText
+                                android:id="@+id/codeLlOtpBox"
+                                android:layout_width="110dp"
+                                android:layout_height="match_parent"
+                                app:met_textColorHint="@color/colorLightHint"
+                                app:met_underlineColor="@color/colorLightHint"
+                                app:met_textColor="@color/colorTextDark"
+                                app:met_baseColor="@color/colorTextDark"
+                                app:met_primaryColor="@color/colorLightHint"
+                                android:hint="Enter otp"
+                                android:textAlignment="center"
+                                android:inputType="number"
+                                android:digits="0123456789"
+                                android:maxLength="6"
+                                android:maxLines="1"
+                                android:elevation="1dp"
+                                app:met_floatingLabel="normal" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:gravity="center_horizontal"
+                            android:layout_marginTop="30dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="If you did not receive the verification code"
+                                android:textSize="14dp"
+                                android:textColor="@color/colorLightHint"
+                                android:layout_marginBottom="2dp"
+                                android:fontFamily="@font/roboto_medium"/>
+
+                            <TextView
+                                android:id="@+id/codeLlResendCode"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Resend code"
+                                android:textSize="14dp"
+                                android:textColor="@color/colorBlue"
+                                android:fontFamily="@font/roboto_bold" />
+
+                        </LinearLayout>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="60dp">
+
+                            <Button
+                                android:id="@+id/codeLlButtonContinue"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:text="continue"
+                                android:textSize="20dp"
+                                android:textColor="@color/colorWhite"
+                                android:background="@drawable/activity_phone_register_button"
+                                android:fontFamily="@font/roboto_medium"
+                                android:layout_marginBottom="5dp"
+                                android:elevation="0dp"
+                                android:padding="10dp"/>
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </androidx.core.widget.NestedScrollView>
+
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+</layout>

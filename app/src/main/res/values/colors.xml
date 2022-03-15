@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorBackground">#f1f2f1</color>
+    <color name="colorBackgroundLight">#f0f0f0</color>
+    <color name="colorBackgroundDark">#f1f0f5</color>
+    <color name="colorBackgroundBox">#f3f4f6</color>
+    <color name="colorTextLight">#a1a1a1</color>
+    <color name="colorTextDark">#3e3f45</color>
+    <color name="colorLightHint">#c2c2c2</color>
+    <color name="colorDisabledButton">#c2c2c2</color>
+    <color name="colorBlue">#4893f4</color>
+    <color name="colorTheme">#dbdcda</color>
+
+
+    <color name="appBackground">#f3f3f3</color>
+    <color name="appFontGrayColor">#c6bfbe</color>
+    <color name="appFontOrangeColor">#f97b4d</color>
+    <color name="appFontDarkColor">#442f28</color>
+    <color name="appFontGrayDarkColor">#807b79</color>
+
+    //Heebo Black, Heebo Bold, Heebo Regular
+</resources>

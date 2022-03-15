@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".startUp.WelcomeActivity"
+    android:background="@color/colorBackgroundDark"
+    android:padding="20dp">
+
+    <ImageView
+        android:id="@+id/welcomeImage"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:src="@drawable/welcome"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@id/welcomeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to ArcMessenger"
+        android:fontFamily="@font/roboto_bold"
+        android:textSize="25dp"
+        android:textColor="@color/colorTextDark"
+        android:layout_below="@id/welcomeImage"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="60dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chat with your friends, share \n photo and files"
+        android:fontFamily="@font/roboto_medium"
+        android:textSize="17dp"
+        android:textColor="@color/colorTextLight"
+        android:layout_below="@id/welcomeText"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="15dp"
+        android:textAlignment="center" />
+
+    <Button
+        android:id="@+id/buttonContinue"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:text="Continue"
+        android:textSize="18dp"
+        android:textColor="@color/colorWhite"
+        android:background="@drawable/activity_phone_register_button"
+        android:fontFamily="@font/roboto_medium"
+        android:layout_marginBottom="5dp"
+        android:elevation="0dp"
+        android:padding="10dp"
+        android:layout_alignParentBottom="true"/>
+
+
+</RelativeLayout>

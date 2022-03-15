@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".manageChatAndImage.reviewImage.ReviewImageActivity"
+    android:background="@color/colorTextDark">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/aapBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorTextDark"
+        app:elevation="0dp">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent">
+
+            <RelativeLayout
+                android:id="@+id/topBar"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="65dp"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/buttonBack"
+                        android:layout_width="wrap_content"
+                        android:layout_height="65dp"
+                        android:src="@drawable/ic_baseline_arrow_back_24"
+                        app:tint="@color/colorWhite" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Send Image"
+                    android:textColor="@color/colorWhite"
+                    android:fontFamily="@font/roboto_medium"
+                    android:layout_centerInParent="true"
+                    android:textAppearance="@style/Toolbar.TitleText"/>
+
+            </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ImageView
+        android:id="@+id/sendImage"
+        android:layout_width="match_parent"
+        android:src="@drawable/icon_user_login"
+        android:layout_height="match_parent"
+        android:scaleType="fitCenter"
+        android:layout_below="@id/aapBar"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/buttonSend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_send_24"
+        app:backgroundTint="@color/colorBlue"
+        app:tint="@color/colorWhite"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="20dp"
+        app:elevation="0dp"/>
+
+</RelativeLayout>

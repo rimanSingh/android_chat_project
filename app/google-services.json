@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "531219709009",
+    "firebase_url": "https://arcmessenger-bc444-default-rtdb.firebaseio.com",
+    "project_id": "arcmessenger-bc444",
+    "storage_bucket": "arcmessenger-bc444.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:531219709009:android:911ab274eb683dd8384c70",
+        "android_client_info": {
+          "package_name": "com.example.arcmessenger"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "531219709009-4k8rona9pgdvv8btdrql4mrn8ghmrprs.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.arcmessenger",
+            "certificate_hash": "6bca4d561c3a988ac05bf0ce613e6c24a85cb735"
+          }
+        },
+        {
+          "client_id": "531219709009-lfu8dfgq8l9km6r4hfp66ec3p54fmicj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAq9uuw_VX3FESphl0C6h0QjJ-ch4XdzqI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "531219709009-lfu8dfgq8l9km6r4hfp66ec3p54fmicj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

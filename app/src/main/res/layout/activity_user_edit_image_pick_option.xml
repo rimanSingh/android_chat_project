@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorBackgroundBox"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="20dp">
+
+        <TextView
+            android:id="@+id/photoGallery"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Photo Gallery"
+            android:textColor="@color/colorBlue"
+            android:textSize="18dp"
+            android:background="@drawable/user_edit_image_pick_topbackground"
+            android:fontFamily="@font/roboto_medium"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/camera"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Camera"
+            android:textColor="@color/colorBlue"
+            android:textSize="18dp"
+            android:background="@drawable/user_edit_image_pick_middlebackground"
+            android:fontFamily="@font/roboto_medium"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/cancel"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Cancel"
+        android:textColor="@color/colorBlue"
+        android:textSize="18dp"
+        android:fontFamily="@font/roboto_bold"
+        android:background="@drawable/user_edit_image_pick_bottombackground"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"/>
+
+</LinearLayout>
